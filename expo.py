@@ -21,6 +21,4 @@ for devices in devices_list:
 
     net_connect = ConnectHandler(**cisco_xe)
     output = net_connect.send_config_set(commands_list)
-    tn.read_until(b"This operation may require a reload of the system. Do you want to proceed? [y/n] ")
-    tn.write(b"y\n")
     print (output)
