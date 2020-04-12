@@ -19,7 +19,7 @@ for devices in devices_list:
         'password': 'Leen!2005Meel!2005'
     }
 
-    net_connect = ConnectHandler(**iosxe_device)
+    net_connect = ConnectHandler(**cisco_xe_device)
     output = net_connect.send_config_set(commands_list)
     tn.read_until(b"This operation may require a reload of the system. Do you want to proceed? [y/n] ")
     tn.write(b"y\n")
