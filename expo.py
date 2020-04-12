@@ -15,7 +15,7 @@ for devices in devices_list:
     cisco_xe = {
         'device_type': 'cisco_xe',
         'ip': ip_address_of_device,
-        'username': 'alijabe',
+        'username': 'ali.jaber',
         'password': 'Leen!2005Meel!2005'
     }
 
