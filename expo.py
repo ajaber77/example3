@@ -18,5 +18,8 @@ for devices in devices_list:
     }
 
     net_connect = ConnectHandler(**cisco_xe)
-    output = net_connect.send_command('show ip interface brief')
-    print (output)
+    output = net_connect.send_command_timing('install add file flash:cat9k_iosxe.16.12.02t.SPA.bin activate commit')
+    if 'This operation may require a reload of the system. Do you want to proceed? [y/n]' in output:
+    output += net_connect.send_command_timing("y")
+    print(output)
+    
