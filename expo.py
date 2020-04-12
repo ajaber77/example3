@@ -15,8 +15,8 @@ for devices in devices_list:
     iosxe_device = {
         'device_type': 'cisco_iosxe',
         'ip': ip_address_of_device,
-        'username': 'cisco',
-        'password': 'cisco'
+        'username': 'alijabe',
+        'password': 'Leen!2005Meel!2005'
     }
 
     net_connect = ConnectHandler(**iosxe_device)
