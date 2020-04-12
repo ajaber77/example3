@@ -18,6 +18,5 @@ for devices in devices_list:
     }
 
     net_connect = ConnectHandler(**cisco_xe)
-    cmd = 'do install add file flash:cat9k_iosxe.16.12.02t.SPA.bin activate commit'
-    output = net_connect.send_command(cmd)
+    output = net_connect.send_command('do install add file flash:cat9k_iosxe.16.12.02t.SPA.bin activate commit')
     print (output)
