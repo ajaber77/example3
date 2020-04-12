@@ -13,7 +13,7 @@ for devices in devices_list:
     print ('Connecting to device" ' + devices)
     ip_address_of_device = devices
     iosxe_device = {
-        'device_type': 'cisco_iosxe',
+        'device_type': 'cisco_xe',
         'ip': ip_address_of_device,
         'username': 'alijabe',
         'password': 'Leen!2005Meel!2005'
