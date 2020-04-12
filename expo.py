@@ -12,7 +12,7 @@ with open('devices_file') as f:
 for devices in devices_list:
     print ('Connecting to device" ' + devices)
     ip_address_of_device = devices
-    iosxe_device = {
+    cisco_xe = {
         'device_type': 'cisco_xe',
         'ip': ip_address_of_device,
         'username': 'alijabe',
