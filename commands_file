@@ -1,2 +1,1 @@
-end
-install add file flash:cat9k_iosxe.16.12.02t.SPA.bin activate commit
+do install add file flash:cat9k_iosxe.16.12.02t.SPA.bin activate commit
