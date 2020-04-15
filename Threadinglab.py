@@ -30,7 +30,7 @@ def read_devices( devices_filename ):
 def config_worker( device ):
 
     #---- Connect to the device
-    session = ConnectHandler( device_type='cisco_xe', ip=device['ipaddr'], username='admin', password='Dubai123')
+    session = ConnectHandler( device_type='cisco_xe', ip=device['ipaddr'], username='admin', password='Dubai123', port=22)
 
     #---- Use CLI command to get configuration data from device
     print ('---- Getting configuration from device' + device['ipaddr'])
