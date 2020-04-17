@@ -22,7 +22,9 @@ for devices in devices_list:
 
         SW_output = output.replace("address1",device_info[1]).replace("Hostaname1", device_info[0])
 
-        config_filename = 'config-' + device_info[0]  # Important - create unique configuration file name
+        config_filename =  device_info[0]  # Important - create unique configuration file name
+
+        print ('---- Generating configuration for : ', config_filename)
 
         with open( config_filename, 'w' ) as config_out:  config_out.write( SW_output )
 
