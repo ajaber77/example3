@@ -1,1 +1,5 @@
-do install add file flash:cat9k_iosxe.16.12.02t.SPA.bin activate commit
+
+Hostname Hostaname1
+!
+Interface Ethernet0
+ip address address1 255.255.255.0
